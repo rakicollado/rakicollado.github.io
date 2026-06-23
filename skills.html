@@ -3,80 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skills | Raki Collado</title>
+  <title>Raki Collado | Skills</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body data-page="skills">
-  <div class="bg-animation" aria-hidden="true">
-    <span class="orb" style="--size: 220px; --x: 6%; --y: 10%; --speed: 18s;"></span>
-    <span class="orb" style="--size: 340px; --x: 72%; --y: 4%; --speed: 24s;"></span>
-    <span class="orb" style="--size: 180px; --x: 82%; --y: 62%; --speed: 20s;"></span>
-    <span class="orb" style="--size: 270px; --x: 18%; --y: 72%; --speed: 26s;"></span>
-    <span class="orb" style="--size: 140px; --x: 48%; --y: 18%; --speed: 16s;"></span>
+  <div class="gray-motion" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
   </div>
 
-  <div class="page-shell">
-    <aside class="sidebar glass-panel">
-      <div>
-        <div class="profile-block">
-          <div class="avatar-frame">
-            <img src="assets/profile.jpg" alt="Profile photo" />
-            <span class="initials">RC</span>
-          </div>
-          <h1 class="name">Raki<br />Collado</h1>
-          <span class="role-pill">Portfolio</span>
-        </div>
-        <div class="contact-list">
-          <div class="contact-item"><span>Email</span><a href="mailto:your.email@example.com">your.email@example.com</a></div>
-          <div class="contact-item"><span>Location</span><p>Philippines</p></div>
-          <div class="contact-item"><span>Website</span><a href="https://rakicollado.github.io">rakicollado.github.io</a></div>
-        </div>
+  <div class="portfolio-frame">
+    <aside class="profile-card glass">
+      <div class="avatar">
+        <img src="assets/profile.jpg" alt="Raki Collado profile photo" onerror="this.style.display='none'" />
+        <b>RC</b>
       </div>
-      <div class="socials" aria-label="Social links"><a href="#">GH</a><a href="#">IN</a><a href="#">FB</a></div>
+      <h1>Raki<br />Collado</h1>
+      <p class="role">Skills</p>
+
+      <div class="mini-info">
+        <span>Focus</span>
+        <p>Web, programming, and IT skills.</p>
+      </div>
+      <div class="mini-info">
+        <span>Update</span>
+        <p>Edit this page anytime in skills.html.</p>
+      </div>
     </aside>
 
-    <main class="main-area">
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a class="nav-link" data-page="resume" href="resume.html">Resume</a>
-        <a class="nav-link" data-page="certificates" href="certificates.html">Certificates</a>
-        <a class="nav-link" data-page="about" href="index.html">About</a>
-        <a class="nav-link" data-page="skills" href="skills.html">Skills</a>
+    <main class="workspace glass">
+      <nav class="nav-tabs" aria-label="Main navigation">
+        <a href="resume.html" data-page="resume">Resume</a>
+        <a href="certificates.html" data-page="certificates">Certificates</a>
+        <a href="index.html" data-page="about">About</a>
+        <a href="skills.html" data-page="skills">Skills</a>
       </nav>
 
-      <section class="content-card">
-        <div class="content-inner">
-          <span class="eyebrow">Skills</span>
-          <h1>Technical and creative skills.</h1>
-          <p class="lead">Edit the skill names and levels below to match your real portfolio.</p>
+      <section class="panel compact-panel">
+        <p class="kicker">Skills</p>
+        <h2>Skill set.</h2>
 
-          <h2>Core skills</h2>
-          <div class="grid-2">
-            <article class="skill-card">
-              <header><strong>HTML / CSS</strong><span>90%</span></header>
-              <div class="meter"><i style="--level: 90%"></i></div>
-            </article>
-            <article class="skill-card">
-              <header><strong>JavaScript</strong><span>80%</span></header>
-              <div class="meter"><i style="--level: 80%"></i></div>
-            </article>
-            <article class="skill-card">
-              <header><strong>UI Design</strong><span>75%</span></header>
-              <div class="meter"><i style="--level: 75%"></i></div>
-            </article>
-            <article class="skill-card">
-              <header><strong>Git / GitHub</strong><span>85%</span></header>
-              <div class="meter"><i style="--level: 85%"></i></div>
-            </article>
-          </div>
-
-          <h2>Tools</h2>
-          <div class="grid-3">
-            <article class="info-card"><h3>Development</h3><p>HTML, CSS, JavaScript, Git, GitHub Pages.</p></article>
-            <article class="info-card"><h3>Design</h3><p>Figma, wireframing, responsive layouts, visual polish.</p></article>
-            <article class="info-card"><h3>Productivity</h3><p>Documentation, presentations, reports, collaboration.</p></article>
-          </div>
-
-          <p class="footer-note">© <span data-year></span> Raki Collado.</p>
+        <div class="skill-groups">
+          <article class="tile">
+            <h3>Frontend</h3>
+            <div class="chips">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+            </div>
+          </article>
+          <article class="tile">
+            <h3>Backend</h3>
+            <div class="chips">
+              <span>PHP</span><span>MySQL</span><span>Node.js</span><span>APIs</span>
+            </div>
+          </article>
+          <article class="tile">
+            <h3>Tools</h3>
+            <div class="chips">
+              <span>Git</span><span>GitHub</span><span>VS Code</span><span>Figma</span>
+            </div>
+          </article>
         </div>
       </section>
     </main>

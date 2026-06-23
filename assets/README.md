@@ -1,5 +1,8 @@
-Add your personal files here:
+Put your files here:
 
-- `profile.jpg` for your profile photo
-- `resume.pdf` for your resume download
-- `certificates/` for certificate PDFs or images
+- profile.jpg
+- resume.pdf
+- certificates/certificate-1.pdf
+- certificates/certificate-2.pdf
+- certificates/certificate-3.pdf
+- certificates/certificate-4.pdf

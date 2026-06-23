@@ -3,103 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Raki Collado | Portfolio</title>
+  <title>Raki Collado | About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body data-page="about">
-  <div class="bg-animation" aria-hidden="true">
-    <span class="orb" style="--size: 220px; --x: 6%; --y: 10%; --speed: 18s;"></span>
-    <span class="orb" style="--size: 340px; --x: 72%; --y: 4%; --speed: 24s;"></span>
-    <span class="orb" style="--size: 180px; --x: 82%; --y: 62%; --speed: 20s;"></span>
-    <span class="orb" style="--size: 270px; --x: 18%; --y: 72%; --speed: 26s;"></span>
-    <span class="orb" style="--size: 140px; --x: 48%; --y: 18%; --speed: 16s;"></span>
+  <div class="gray-motion" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
   </div>
 
-  <div class="page-shell">
-    <aside class="sidebar glass-panel">
-      <div>
-        <div class="profile-block">
-          <div class="avatar-frame">
-            <img src="assets/profile.jpg" alt="Profile photo" />
-            <span class="initials">RC</span>
-          </div>
-          <h1 class="name">Raki<br />Collado</h1>
-          <span class="role-pill">Portfolio</span>
-        </div>
-
-        <div class="contact-list">
-          <div class="contact-item">
-            <span>Email</span>
-            <a href="mailto:your.email@example.com">your.email@example.com</a>
-          </div>
-          <div class="contact-item">
-            <span>Location</span>
-            <p>Philippines</p>
-          </div>
-          <div class="contact-item">
-            <span>Website</span>
-            <a href="https://rakicollado.github.io">rakicollado.github.io</a>
-          </div>
-        </div>
+  <div class="portfolio-frame">
+    <aside class="profile-card glass">
+      <div class="avatar">
+        <img src="assets/profile.jpg" alt="Raki Collado profile photo" onerror="this.style.display='none'" />
+        <b>RC</b>
       </div>
+      <h1>Raki<br />Collado</h1>
+      <p class="role">Portfolio</p>
 
-      <div class="socials" aria-label="Social links">
-        <a href="#" aria-label="GitHub">GH</a>
-        <a href="#" aria-label="LinkedIn">IN</a>
-        <a href="#" aria-label="Facebook">FB</a>
+      <div class="mini-info">
+        <span>Email</span>
+        <a href="mailto:your.email@example.com">your.email@example.com</a>
+      </div>
+      <div class="mini-info">
+        <span>Location</span>
+        <p>Philippines</p>
+      </div>
+      <div class="mini-info">
+        <span>Site</span>
+        <a href="https://rakicollado.github.io">rakicollado.github.io</a>
       </div>
     </aside>
 
-    <main class="main-area">
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a class="nav-link" data-page="resume" href="resume.html">Resume</a>
-        <a class="nav-link" data-page="certificates" href="certificates.html">Certificates</a>
-        <a class="nav-link" data-page="about" href="index.html">About</a>
-        <a class="nav-link" data-page="skills" href="skills.html">Skills</a>
+    <main class="workspace glass">
+      <nav class="nav-tabs" aria-label="Main navigation">
+        <a href="resume.html" data-page="resume">Resume</a>
+        <a href="certificates.html" data-page="certificates">Certificates</a>
+        <a href="index.html" data-page="about">About</a>
+        <a href="skills.html" data-page="skills">Skills</a>
       </nav>
 
-      <section class="content-card">
-        <div class="content-inner">
-          <span class="eyebrow">About</span>
-          <h1>Clean gray glass portfolio.</h1>
-          <p class="lead">
-            This is a multi-page portfolio template made for GitHub Pages. It uses a white and gray glassmorphism layout, soft shadows, and subtle gray background animations. Replace this text with your existing portfolio content.
-          </p>
+      <section class="panel compact-panel">
+        <p class="kicker">About</p>
+        <h2>Clean gray glass portfolio.</h2>
+        <p class="lead">A compact multi-page portfolio for GitHub Pages. This version is divided into separate pages, so visitors do not need to scroll through one long website.</p>
 
-          <div class="hero-actions">
-            <a class="button" href="resume.html">View Resume</a>
-            <a class="button secondary" href="certificates.html">See Certificates</a>
-          </div>
+        <div class="split-grid">
+          <article class="tile">
+            <span>01</span>
+            <h3>Who I am</h3>
+            <p>Write a short introduction about yourself, your course, work, or career goal.</p>
+          </article>
+          <article class="tile">
+            <span>02</span>
+            <h3>What I do</h3>
+            <p>Add your focus such as web development, design, programming, or IT projects.</p>
+          </article>
+        </div>
 
-          <h2>What I do</h2>
-          <div class="grid-2">
-            <article class="info-card">
-              <h3>Development</h3>
-              <p>Write a short description of your web, software, or IT experience here. Mention your strongest tools, projects, or specialization.</p>
-            </article>
-            <article class="info-card">
-              <h3>Design & Projects</h3>
-              <p>Add your project focus, design interests, academic work, research, or portfolio highlights. Keep it short and easy to scan.</p>
-            </article>
-          </div>
-
-          <h2>Quick facts</h2>
-          <div class="grid-3">
-            <article class="info-card">
-              <div class="number">01</div>
-              <p>Replace this with your first key highlight.</p>
-            </article>
-            <article class="info-card">
-              <div class="number">02</div>
-              <p>Replace this with your second key highlight.</p>
-            </article>
-            <article class="info-card">
-              <div class="number">03</div>
-              <p>Replace this with your third key highlight.</p>
-            </article>
-          </div>
-
-          <p class="footer-note">© <span data-year></span> Raki Collado. Built for GitHub Pages.</p>
+        <div class="quick-actions">
+          <a class="button" href="resume.html">Open Resume</a>
+          <a class="button ghost" href="skills.html">View Skills</a>
         </div>
       </section>
     </main>
