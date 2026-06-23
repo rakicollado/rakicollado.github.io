@@ -1,8 +1,8 @@
-Put your files here:
+Put your assets here.
 
-- profile.jpg
+Required for resume download:
 - resume.pdf
-- certificates/certificate-1.pdf
-- certificates/certificate-2.pdf
-- certificates/certificate-3.pdf
-- certificates/certificate-4.pdf
+
+Optional:
+- profile.jpg
+- certificates/

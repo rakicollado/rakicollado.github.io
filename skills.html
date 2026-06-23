@@ -3,71 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Raki Collado | Skills</title>
+<title>Rho-Anne Collado | Portfolio</title>
+<link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body data-page="skills">
-  <div class="gray-motion" aria-hidden="true">
-    <span></span><span></span><span></span><span></span>
-  </div>
+  <div class="gray-motion" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
 
-  <div class="portfolio-frame">
-    <aside class="profile-card glass">
-      <div class="avatar">
-        <img src="assets/profile.jpg" alt="Raki Collado profile photo" onerror="this.style.display='none'" />
-        <b>RC</b>
-      </div>
-      <h1>Raki<br />Collado</h1>
-      <p class="role">Skills</p>
+  <main class="page-wrap">
+    <div class="portfolio-frame">
+      <aside class="profile-card glass">
+        <div class="avatar">
+          <img src="assets/profile.jpg" alt="Rho-Anne Collado profile photo" onerror="this.style.display='none'" />
+          <b>RC</b>
+        </div>
+        <h1>Rho-Anne<br />Collado</h1>
+        <div class="role-pill">IT Student</div>
+        <div class="profile-list">
+          <div><span>Email</span><a href="mailto:colladorhoanne.27@gmail.com">colladorhoanne.27@gmail.com</a></div>
+          <div><span>Location</span><p>Tanauan City, Batangas</p></div>
+          <div><span>Website</span><a href="https://rakicollado.github.io">rakicollado.github.io</a></div>
+        </div>
+      </aside>
 
-      <div class="mini-info">
-        <span>Focus</span>
-        <p>Web, programming, and IT skills.</p>
-      </div>
-      <div class="mini-info">
-        <span>Update</span>
-        <p>Edit this page anytime in skills.html.</p>
-      </div>
-    </aside>
+      <section class="content-card glass">
+        <nav class="navbar" aria-label="Main navigation">
+          <a href="index.html" data-page="about">About</a>
+          <a href="resume.html" data-page="resume">Resume</a>
+          <a href="projects.html" data-page="projects">Projects</a>
+          <a href="certificates.html" data-page="certificates">Certificates</a>
+          <a href="skills.html" data-page="skills">Skills</a>
+        </nav>
 
-    <main class="workspace glass">
-      <nav class="nav-tabs" aria-label="Main navigation">
-        <a href="resume.html" data-page="resume">Resume</a>
-        <a href="certificates.html" data-page="certificates">Certificates</a>
-        <a href="index.html" data-page="about">About</a>
-        <a href="skills.html" data-page="skills">Skills</a>
-      </nav>
+        <div class="page-content skills-page-content">
+          <p class="eyebrow">Skills</p>
+          <h2>Skills stack.</h2>
+          <p class="lead">A quick view of the tools and areas I am developing through academic work and hands-on projects.</p>
 
-      <section class="panel compact-panel">
-        <p class="kicker">Skills</p>
-        <h2>Skill set.</h2>
+          <div class="core-competencies">
+            <b>Core competencies:</b>
+            Independent work, teamwork, problem-solving, critical thinking, technical documentation, adaptability, and willingness to learn.
+          </div>
 
-        <div class="skill-groups">
-          <article class="tile">
-            <h3>Frontend</h3>
-            <div class="chips">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+          <div class="skills-three-grid">
+            <div class="mini-card skill-card">
+              <h3>Web Development</h3>
+              <div class="skill-cloud">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+              </div>
             </div>
-          </article>
-          <article class="tile">
-            <h3>Backend</h3>
-            <div class="chips">
-              <span>PHP</span><span>MySQL</span><span>Node.js</span><span>APIs</span>
+
+            <div class="mini-card skill-card">
+              <h3>Design & Analytics</h3>
+              <div class="skill-cloud">
+                <span>Figma</span>
+                <span>Canva</span>
+                <span>Power BI</span>
+                <span>Dashboards</span>
+                <span>Reports</span>
+              </div>
             </div>
-          </article>
-          <article class="tile">
-            <h3>Tools</h3>
-            <div class="chips">
-              <span>Git</span><span>GitHub</span><span>VS Code</span><span>Figma</span>
+
+            <div class="mini-card skill-card">
+              <h3>Networking & Systems</h3>
+              <div class="skill-cloud">
+                <span>Cisco Packet Tracer</span>
+                <span>Network Design</span>
+                <span>Windows Server 2022</span>
+                <span>System Administration</span>
+              </div>
             </div>
-          </article>
+          </div>
         </div>
       </section>
-    </main>
-  </div>
+    </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
