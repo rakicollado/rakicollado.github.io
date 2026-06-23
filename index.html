@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio website for Raki Collado." />
+  <title>Raki Collado | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="soft-glow glow-one"></div>
+  <div class="soft-glow glow-two"></div>
+  <div class="soft-glow glow-three"></div>
+
+  <header class="topbar glass" id="topbar">
+    <a class="brand" href="#home" aria-label="Go to home">
+      <span class="brand-mark">RC</span>
+      <span>Portfolio</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#resume">Resume</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+    </nav>
+  </header>
+
+  <main class="page-shell" id="home">
+    <aside class="profile-card glass reveal">
+      <div class="profile-photo-wrap">
+        <!-- Replace the initials block below with an image if you want:
+             <img src="assets/profile.jpg" alt="Raki Collado" class="profile-photo" /> -->
+        <div class="profile-photo initials">RC</div>
+      </div>
+
+      <h1>Raki Collado</h1>
+      <p class="role-pill">Software Engineer</p>
+      <p class="mini-bio">A clean, modern portfolio space for your resume, certificates, background, and technical skills.</p>
+
+      <div class="contact-list">
+        <div>
+          <span>Email</span>
+          <a href="mailto:hello@example.com">hello@example.com</a>
+        </div>
+        <div>
+          <span>Location</span>
+          <p>Philippines</p>
+        </div>
+        <div>
+          <span>Current Portfolio</span>
+          <a href="https://rakicollado.github.io" target="_blank" rel="noreferrer">rakicollado.github.io</a>
+        </div>
+      </div>
+
+      <div class="social-row" aria-label="Social links">
+        <a href="#" aria-label="GitHub">GH</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="Email">@</a>
+      </div>
+    </aside>
+
+    <section class="content-panel glass reveal">
+      <section class="hero-section" aria-labelledby="hero-title">
+        <p class="eyebrow">Glassmorphism Portfolio</p>
+        <h2 id="hero-title">Building simple, elegant, and useful digital experiences.</h2>
+        <p class="hero-copy">Use this template as the new visual shell for your existing portfolio. Replace the placeholder text, links, resume items, and certificates with your real content.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#resume">View Resume</a>
+          <a class="btn ghost" href="https://rakicollado.github.io" target="_blank" rel="noreferrer">Open Existing Site</a>
+        </div>
+      </section>
+
+      <section class="section-block" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <span>01</span>
+          <h2 id="about-title">About</h2>
+        </div>
+        <div class="about-grid">
+          <p>Hi, I am Raki. I create web experiences that balance clean interface design, reliable development, and meaningful user interaction.</p>
+          <p>This section is ready for your current portfolio content. Add your education, work background, projects, research interests, or short professional introduction here.</p>
+        </div>
+      </section>
+
+      <section class="section-block" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <span>02</span>
+          <h2 id="skills-title">Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Front-end</h3>
+            <div class="chips">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <h3>Back-end</h3>
+            <div class="chips">
+              <span>Node.js</span><span>Ruby on Rails</span><span>PHP</span><span>SQL</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <h3>Tools</h3>
+            <div class="chips">
+              <span>Git</span><span>GitHub</span><span>Figma</span><span>VS Code</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block" id="resume" aria-labelledby="resume-title">
+        <div class="section-heading">
+          <span>03</span>
+          <h2 id="resume-title">Resume</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-date">2024 — Present</span>
+            <h3>Your Current Role</h3>
+            <p>Add your current work, internship, teaching experience, freelance work, or academic role here.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2021 — 2024</span>
+            <h3>Education / Previous Role</h3>
+            <p>Describe your degree, organization, responsibilities, achievements, or technologies used.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Projects</span>
+            <h3>Featured Work</h3>
+            <p>Link your strongest projects here and add concise outcomes, tech stacks, and impact.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block" id="certificates" aria-labelledby="certificates-title">
+        <div class="section-heading">
+          <span>04</span>
+          <h2 id="certificates-title">Certificates</h2>
+        </div>
+        <div class="certificate-grid">
+          <article class="certificate-card">
+            <div class="certificate-icon">✓</div>
+            <h3>Certificate Title</h3>
+            <p>Issuer Name · 2026</p>
+          </article>
+          <article class="certificate-card">
+            <div class="certificate-icon">✓</div>
+            <h3>Certificate Title</h3>
+            <p>Issuer Name · 2025</p>
+          </article>
+          <article class="certificate-card">
+            <div class="certificate-icon">✓</div>
+            <h3>Certificate Title</h3>
+            <p>Issuer Name · 2024</p>
+          </article>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer-note">
+    <p>© <span id="year"></span> Raki Collado. Designed with glassmorphism.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
