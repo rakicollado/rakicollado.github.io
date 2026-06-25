@@ -10,7 +10,7 @@ const resumeButton = document.querySelector('[data-download-resume]');
 if (resumeButton) {
   resumeButton.addEventListener('click', () => {
     const link = document.createElement('a');
-    link.href = 'assets/resume.pdf';
+    link.href = 'assets/Resume_Collado.pdf';
     link.download = 'Rho-Anne-Collado-Resume.pdf';
     document.body.appendChild(link);
     link.click();
